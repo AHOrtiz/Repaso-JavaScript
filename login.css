@@ -1,0 +1,113 @@
+.body{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+ padding: 0;
+ width: 100%;
+ height: 100%;
+ position: relative;
+}
+.ConteinerLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+    margin: 13%;
+}
+
+h1{
+    font-weight: 400;
+}
+hr{
+    height: 5px;
+    width: 24%;
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    border:1px solid #f2f2f2;
+}
+.forgotPass{
+    color: fuchsia;
+   
+}
+p{
+    font-weight: 300;
+    text-align: center;
+}
+
+.login-form {
+    box-sizing:border-box;
+    padding-top:15px;
+      padding-bottom:10%;
+    margin:5% auto;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:2px 2px 2px 1px rgba(0, 0, 0, 0.2);  
+  }
+ .login-form  input[type="text"],input[type="password"]
+ {
+   border-radius: 10px;
+   text-align: left;
+   font-size: 16px;
+   color: gray;
+ }
+
+  .login-form input[type="button"] {
+    height:30px;
+    width:100px;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+    border:1px solid #f2f2f2;
+    border-radius:20px;
+    color: white; 
+    cursor:pointer;
+  }
+  .pantallaCarga{
+      width: 100%;
+      min-height: 100%;
+      display: none;   
+      position: fixed;
+      z-index: 1; 
+      background-color: rgba(0, 0, 0, 0.4); 
+      top: 0;   
+  }
+
+  .text{
+      color: white;
+      margin-bottom: 25px;
+      font-size: 20px;
+      letter-spacing: 2px;
+  }
+  
+  .loading{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+.loading .line-box{
+    padding: 2px;
+    width: 40%;
+    height: 20px;
+    border: 2px solid #267191;
+    border-radius: 20px;
+}
+.loading  .line-box .line{
+    height: 20px;
+    border-radius: 20px;
+    background: #67D295;
+    animation: loading 5s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loading{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
